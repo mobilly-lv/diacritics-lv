@@ -1,0 +1,4 @@
+.idea
+coverage
+jest-cache
+node_modules
