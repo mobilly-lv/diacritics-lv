@@ -12,7 +12,7 @@ export enum LatvianLettersHavingAccents {
     Z = 'z',
 }
 
-export const LatvianUnicodeAccentsMap: {[letter in LatvianLettersHavingAccents]: string[]} = {
+export const LatvianUnicodeAccentsMap: {[letter: string ]: string[]} = {
     'a': ['\u0100', '\u0101'],
     'e': ['\u0112', '\u0113'],
     'i': ['\u012B', '\u012A'],
@@ -26,7 +26,7 @@ export const LatvianUnicodeAccentsMap: {[letter in LatvianLettersHavingAccents]:
     'z': ['\u017D', '\u017E'],
 };
 
-export const LatvianAccentsReplacementMap: {[letter in string]: string} = {
+export const LatvianAccentsReplacementMap: {[letter: string]: string} = {
     'Ā': 'A',
     'ā': 'a',
     'Ē': 'E',

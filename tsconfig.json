@@ -3,8 +3,8 @@
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
+    "outDir": "dist",
     "allowSyntheticDefaultImports": true,
-    "allowJs": true,
     "importHelpers": true,
     "jsx": "react",
     "alwaysStrict": true,
@@ -16,10 +16,16 @@
     "noUnusedParameters": true,
     "noImplicitAny": false,
     "noImplicitThis": false,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "declaration": true
   },
   "include": [
     "src/**/*",
     "__tests__/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test"
   ]
 }
