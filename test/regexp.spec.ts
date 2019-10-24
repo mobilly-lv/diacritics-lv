@@ -10,4 +10,8 @@ describe('createDiacriticsInsensitiveRegExp', () => {
         });
     });
 
+    it('should create diacritics-insensitive regular expression', () => {
+        expect(createDiacriticsInsensitiveRegExp("Raina bulvaris")).toEqual(/(?:R)(?:a|[Āā])(?:i|[īĪ])(?:n|[Ņņ])(?:a|[Āā])(?: )(?:b)(?:u|[Ūū])(?:l|[Ļļ])(?:v)(?:a|[Āā])(?:r)(?:i|[īĪ])(?:s|[Šš])/);
+    })
+
 });

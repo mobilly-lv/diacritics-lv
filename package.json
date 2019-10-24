@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "A collection of utility functions to handle Latvian letters with accents",
   "author": "Dmitrijs Jemeljanovs <dmitrijs@mobilly.lv>",
-  "engineStrict": true,
-  "engines": {
-    "node": ">= 8.9.0"
-  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mobilly-lv/diacritics-lv"
+  },
   "scripts": {
     "clean": "rimraf coverage build tmp",
     "build": "tsc -p tsconfig.release.json",
+    "prepare": "npm run test && npm run build",
     "lint": "tslint -t stylish --project \"tsconfig.json\"",
     "test": "jest --no-cache --verbose --coverage"
   },
