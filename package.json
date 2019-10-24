@@ -1,6 +1,6 @@
 {
   "name": "diacritics-lv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of utility functions to handle Latvian letters with accents",
   "author": "Dmitrijs Jemeljanovs <dmitrijs@mobilly.lv>",
   "main": "dist/index.js",
